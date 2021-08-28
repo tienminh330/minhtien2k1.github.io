@@ -1,0 +1,515 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+
+/* panner */
+p
+{
+   
+    color: #111;
+   font-weight: 500;
+
+}
+/* body
+{
+    min-height: 1000px;
+} */
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(ba.jfif);
+    
+    background-size: cover;
+
+}
+
+
+
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: #fff;
+
+}
+.banner .content p
+{
+    font-size: 1em;
+    color: #fff;
+}
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #ff0157;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+}
+
+/* header */
+
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+/* khi keo xuong thì chuyẻn thành class này */
+.stiky
+{
+    background: white;
+    padding: 10px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0 , 0,05);
+}
+
+.stiky .logo{
+    color: black;
+}
+.stiky .navigation li a
+{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-weight: 300;
+    font-size: 98%;
+}
+header .logo
+{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+}
+header .logo span
+{
+    color: #ff0175;
+
+}
+header .navigation
+{
+    position: relative;
+    display: flex;
+
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    
+}
+
+header .navigation li a:hover
+{
+color: #ff0157;
+
+}
+section
+{
+    padding: 100px;
+}
+.bu
+{
+    display: flex;
+}
+.checkall
+{
+   display: flex;
+   padding: 10px 0;
+   width: 63%;
+  
+}
+.del{
+    display: flex;
+}
+.checkall input{
+    padding: 10px 10px;
+}
+.checkall p{
+    padding: 0 20px;
+}
+.giohang
+{
+    width: 85%;
+    /* min-height: 500vh; */
+    
+    /* background: aqua; */
+    
+   
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.boxhang
+{
+    width: 100%;
+    height: 266px;
+    /* background-color: chartreuse; */
+
+   
+}
+.boxthanhtoan
+{
+    width: 34%;
+    
+    background: #eadae2;
+    padding: 55px;
+    height: 500px;
+}
+.btn1{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background: #ff3893;
+    padding: 16px;
+    display: block;
+    color: black;   
+}
+.btn12{
+    align-items: center;
+    text-align: center;
+    width: 24%;
+    background: #ff3893;
+    padding: 10px;  
+    float: right;
+    display: block;
+    color: black;  
+}
+.donhang{
+    width: 100%;
+    
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.boxbig{
+    width: 98% ;
+}
+.boxhang .hang{
+    background-color: #f2f2f3;
+    display: block;
+    font-size: 19px;
+    color: black;
+}
+.boxhang .check{
+    width: 3%;
+    padding: 68px 0;
+    float: left;
+}
+.boxhang .donhang img{
+    width: 106px;
+    float: left;
+    padding: 0px;
+    margin: 10px 20px;
+   
+}
+.boxhang .text1{
+    width: 43%;
+    padding: 17px;
+    margin: 10px 20px;
+    float: left;
+    
+}
+.boxhang .text1 a{
+    color: #740352;
+}
+.boxhang .dongia
+{
+    width: 15%;
+    padding: 17px;
+    margin: 11px 119px;;
+    float: left;
+}
+.boxhang .dongia p,i{
+    color: #111;
+    font-weight: 500;
+    padding: 9px 9px;
+}
+
+.bao{
+    width: 100%;
+    display: flex;
+}
+.thongtin
+{
+    float: left;
+    width: 413px;
+}
+.thongtin1
+{
+    float: left;
+    width: 222px;
+}
+.fis p{
+    padding: 10px 0;
+}
+.fis input 
+{
+    width: 74%;
+    height: 40px;
+}
+.te { 
+    margin-top: 121px;
+    font-size: 30px;
+}
+
+.copyrightText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0 , 0,1);
+    text-align: center;
+}
+.copyrightText
+{
+    color: #333;
+}
+.copyrightText a{
+    color: #ff0175;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+  
+  @media screen and (max-width: 1024px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+@media  (max-width: 991px)
+{
+    header,
+    header .stiky 
+    {
+        padding: 10px 20px;
+
+    }  
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 61px);
+        position: fixed;
+        left: 0;
+        top: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li
+    {
+        list-style: none;
+        margin-left: 0;
+
+    }
+    header .navigation li a
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: #111;
+        font-weight: 300;
+        
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(clipart365828.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(clipart109443.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header .stiky  .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .banner .content h2 {
+        font-size: 4em;
+        color: rgb(255, 255, 255);
+    }
+    .row 
+    {
+        
+        flex-direction: column;
+    }
+    .row .col50 
+    {
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgbx 
+    {
+        
+        height: 300px;
+        margin-top: 20px;
+    }
+    .titleText 
+    {
+       text-align: center;
+    }
+    .menu .content 
+    {
+        margin-top: 20px;
+    }
+    .menu .content .box
+    {
+        margin: 10px;
+    }
+    .menu .content .box .imgbx 
+    {
+        
+        height: 260px;
+    }
+    .title 
+    {
+       
+        text-align: center;
+    }
+    .titleText
+    {
+      font-size: 1.8em;
+      line-height: 1.5em;
+      margin-bottom: 15px;
+      font-weight: 300;
+    }
+    .testimonials .content .box 
+    {
+        margin: 10px;
+        padding: 20px;       
+    }
+    .contactForm
+    {
+        
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .bao {
+        width: 100%;
+        display: block;
+    }
+    .giohang {
+        width: 100%;
+        min-height: auto;
+        /* background: aqua; */
+        justify-content: space-between;
+        /* align-items: center; */
+    }
+    .boxhang {
+        width: 100%;
+        height: 197px;
+        /* background-color: chartreuse; */
+    }
+    .boxhang .text1 {
+        width: 48%;
+        padding: 0px;
+        margin: 13px 0px;
+        float: left;
+        font-size: 9px;
+    }
+    .boxhang .dongia {
+        padding: 0;
+        margin: 0;
+        float: left;
+        width: 35%;
+    }
+    .bu 
+    {
+       margin-top: 20px;
+    }
+    
+
+    .boxthanhtoan {
+        width: 100%;
+        /* background-color: chartreuse; */
+        background: lightseagreen;
+        padding: 13px;
+        height: 500px;
+        display: block;
+    }
+    .fis input {
+        width: 221px;
+        height: 34px;
+    }
+    .thongtin {
+        float: left;
+        width: 265px;
+    }
+    .btn12{
+        align-items: center;
+        text-align: center;
+        width: 24%;
+        font-size: 13px;
+        background: #ff3893;
+        padding: 10px;  
+        float: right;
+        display: block;
+        color: black;  
+    }
+}

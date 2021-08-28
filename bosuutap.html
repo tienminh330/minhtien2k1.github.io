@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/bosuutap/pcbst.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Bộ Sửu Tập</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>MT</span>shoes<span>.</span></a>
+
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+
+        <ul class="navigation">
+            <li><a href="index.html">Trang Chủ</a></li>
+            <li><a href="bosuutap.html">Bộ Sưu Tập</a></li>
+            <li><a href="sanphamhot.html">Sản Phẩm Hot</a></li>
+            <li><a href="hotro.html">Hổ Trợ</a></li>
+            <li><a href="giohang.html">Giỏ Hàng</a></li>
+            <li><a href="admin.html">Admin</a></li>
+        </ul>
+    </header>
+    
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Alway Choose Good</h2>
+            <p>Cuộc đời thật ngắn ngủi, nhưng gót giày của bạn thì không được phép ngắn!.</p>
+            <a href="bosuutap.html" class="btn">Our Menu</a>
+        </div>
+    </section>
+
+    <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">View All</a></li>
+        <li><a href="#">Bộ Sưu Tập</a></li>
+        <!-- <li>Italy</li> -->
+      </ul>
+    <section>
+        <div class="nae">
+            <h2>Các Sản Phẩm</h2>
+        </div>
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('cars')"> Nam</button>
+            <button class="btn" onclick="filterSelection('animals')">Nữ </button>
+            <button class="btn" onclick="filterSelection('fruits')">Trẻ Em</button>
+            <button class="btn" onclick="filterSelection('colors')">Khác</button>
+          </div>
+          
+          <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+          <div class="container">
+            <div class="filterDiv cars">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/a1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv colors fruits">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/b1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv cars">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/c1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv colors">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/jordan-air-nfh-shoes-1msFvZ (1).jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv cars animals">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/a1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv colors">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/b1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv animals">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/c1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv animals">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/nike/a1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv fruits">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/nike/b1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv fruits animals">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/nike/c1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv fruits">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/nike/b1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv fruits">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/nike/a1.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="filterDiv animals">
+                <div class="item1">
+                    <div class="box">
+                        <div class="imgbx">
+                            <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                        </div>
+                    <div class="text">
+                            <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                            <p>3,239,000 ₫</p>
+                            <p>size:42</p>
+                            <!-- <a class="xe" href="">Xem</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+
+<section>
+    <center><div class="se">
+        <h2>Dành Cho bạn</h2>
+    </div></center>
+    
+</section>
+
+
+
+
+<section>
+
+    <div class="items">
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="box">
+                <div class="imgbx">
+                    <img src="img/nike/jordan-air-nfh-shoes-1msFvZ.jfif" alt="">
+                </div>
+            <div class="text">
+                    <a href="sanpham.html" class="na">Jordan Air NFH</a>
+                    <p>3,239,000 ₫</p>
+                    <p>size:42</p>
+                    <!-- <a class="xe" href="">Xem</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+        
+</section>
+
+<div class="copyrightText">
+    <p>Copyright 2021 <a href="#">Nguyễn Minh Tiến. All Right Reserved</a></p>
+</div>
+</body>
+
+<script>
+    window.addEventListener('scroll',function() {
+    let header = document.querySelector('header');
+    header.classList.toggle("stiky", window.scrollY> 0);
+});
+
+
+function toggleMenu(){
+    const menuToggle = document.querySelector('.menuToggle');
+    const navigation =document.querySelector('.navigation')
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+}
+</script>
+<script>
+    const slider =document.querySelector('.items');
+    let isDown =false;
+    let startX;
+    let scrollLeft;
+
+slider.addEventListener('mousedown',(e) => {
+    isDown = true;
+    slider.classList.add('active');
+    startX = e .pageX - slider.offsetLeft;
+    scrollLeft =slider.scrollLeft;
+  
+});
+    
+
+slider.addEventListener('mouseleave',() => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+
+slider.addEventListener('mouseup',() => {
+    isDown = false;
+    slider.classList.remove('active');
+});
+
+slider.addEventListener('mousemove',(e) => {
+    if (!isDown)return;
+    e.preventDefault();
+    const x = e.pageX - slider.offsetLeft;
+    const walk = (x - startX) * 3;
+    slider.scrollLeft=scrollLeft - walk;
+    
+   
+});
+</script>
+<script>
+    const ele = document.getElementById('container');
+ele.scrollTop = 100;
+ele.scrollLeft = 150;
+
+let pos = { top: 0, left: 0, x: 0, y: 0 };
+
+const mouseDownHandler = function(e) {
+    pos = {
+        // The current scroll 
+        left: ele.scrollLeft,
+        // Get the current mouse position
+        x: e.clientX,
+        y: e.clientY,
+    };
+
+    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mouseup', mouseUpHandler);
+};
+const mouseDownHandler = function(e) {
+    // Change the cursor and prevent user from selecting the text
+    ele.style.cursor = 'grabbing';
+    ele.style.userSelect = 'none';
+   
+};
+
+</script>
+
+<script src="./js/loc.js"></script>
+</html>

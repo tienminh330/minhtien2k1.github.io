@@ -1,0 +1,463 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+/* panner */
+
+.banner{
+    background: url(gd.jpg);
+}
+p
+{
+   
+    color: #111;
+   font-weight: 500;
+
+}
+/* body
+{
+    min-height: 1000px;
+} */
+
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position: relative;
+    width: 48%;
+}
+.titleText
+{
+    color: rgb(5, 5, 5);
+    font-size: 2em;
+    font-weight: 300;
+}
+.titleText span
+{
+    color: #ff0175;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.row .col50 .imgbx
+{
+    position: relative;
+    width: 100%;
+    /* min-height: 300px; */
+    height: 100%;
+}
+.row .col50 .imgbx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* mon an */
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.item1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item1 .box{
+    width: 293px;
+    margin: -8px;
+    border: 15px solid #fff;
+    display: flex;
+    flex-direction: column;
+    background-color: #e6cdd85c;
+    border: 15px solid #fff;
+    
+}
+   
+    
+.item1 .box .imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 226px;
+}
+
+.item1 .box .imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 7px;
+
+}
+.item1 .box .text {
+    padding: 0px 16px 7px;
+}
+
+
+ .item1 .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+.item1 .box .text a{
+    text-decoration: none;
+}
+/* croll */
+
+
+.item{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item .box{
+    width: 340px;
+    margin: 20px;
+    border: 15px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    
+}
+.item .box .imgbx
+{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.item .box .imgbx img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.item .box .text 
+{
+    padding: 15px 0 5px;
+
+}
+
+ .item .box .text h3
+{
+    font-weight: 400;
+    color: #111;
+}
+.item .box .text a{
+    text-decoration: none;
+}
+/* croll */
+
+.items{
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    overflow-y: hidden;
+    white-space: nowrap;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    position: relative;
+    perspective: 500px;
+    scroll-snap-type: x mandatory;
+    cursor: grab;
+    overflow: auto; 
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.items::-webkit-scrollbar{
+    width: 0;
+    height: auto;
+
+}
+.items .active {
+    cursor: grabbing;
+    cursor: -webkit-grabbing;
+    transform: scale(1);
+}
+
+.items .item{
+    min-width: auto;
+    height: auto;
+    margin-right: -34px;
+}
+
+
+/* contact */
+
+
+
+
+
+
+
+.copyrightText
+{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0 , 0,1);
+    text-align: center;
+}
+.copyrightText
+{
+    color: #333;
+}
+.copyrightText a{
+    color: #ff0175;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+ /* Lộc danh mục */
+
+ .filterDiv {
+        float: left;
+
+    width: auto;
+    line-height: auto;
+    
+    margin: 2px;
+    display: none; /* Hidden by default */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #a61451;
+    cursor: pointer;
+  }
+  
+  /* Add a light grey background on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background to the active button */
+  .btn.active {
+    background-color: #a61451;;
+    color: white;
+  }
+/* thu phóng */
+
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+  .copyrightText
+  {
+      padding: 15px 40px;
+      border-top: 1px solid rgba(0, 0 , 0,1);
+      text-align: center;
+  }
+  .copyrightText
+  {
+
+    color: #333;
+    background-color: #ff0175;
+  }
+  .copyrightText a{
+      color: #ffffff;
+      font-weight: 500;
+      text-decoration: none;
+  }
+  
+
+  
+/* giaodienMobile */
+@media  (max-width: 991px)
+{
+    header,
+    header .stiky 
+    {
+        padding: 10px 20px;
+
+    }  
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active{
+        width: 100%;
+        height: calc(100% - 61px);
+        position: fixed;
+        left: 0;
+        top: 61px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li
+    {
+        list-style: none;
+        margin-left: 0;
+
+    }
+    header .navigation li a
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: #111;
+        font-weight: 300;
+        
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(clipart365828.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active
+    {
+        background: url(clipart109443.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    header .stiky  .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+    
+    }
+    .items .item {
+        min-width: 42%;
+        height: auto;
+        margin-right: -8px;
+        align-items: baseline;
+    }
+
+    .item .box .imgbx {
+        
+        width: 84%;
+        
+        height: 122px;
+    }
+    .item .box .imgbx img {
+        top: 0;
+        left: 0;
+        width: 45%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .item .box .imgbx img
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 51%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.item1 .box {
+    width: 172px;
+    height: 231px;
+    box-shadow: none;
+}
+
+.filterDiv {
+float: left;
+width: 45%;
+margin: 5px;
+    
+    
+}
+
+.item .box{
+    width: 287px;
+    margin: 20px;
+    border: 15px solid #fff;
+    display: flex;
+    justify-content:left;
+    background-color: #fff8f8;
+    align-items:unset;
+    flex-direction: column;
+   
+    
+}
+.item1 .box .text {
+    padding: 14px 7px 5px;
+}
+}
